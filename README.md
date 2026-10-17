@@ -44,6 +44,13 @@ gog tasks list <tasklist-id> --all --json --results-only | ./tasks2sp.py
 `--all` is required, otherwise gog returns at most 20 tasks. Progress and a
 summary go to stderr.
 
+To try the import on a few tasks first, cut the list down with `jq`:
+
+```sh
+gog tasks list <tasklist-id> --all --json --results-only \
+  | jq '[.[] | select(.status == "needsAction")][:2]' | ./tasks2sp.py
+```
+
 ## What is imported
 
 - Only tasks with status `needsAction`

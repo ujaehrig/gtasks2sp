@@ -53,7 +53,7 @@ AI Prompt:
 > (Exit 2, kein POST), `--dry-run` (kein POST, Register leer), fehlendes
 > `SP_TOKEN`. Implementiere dann die Schleife und `main`.
 
-## Task 3.5: Dokumentation und Abnahme
+## ~~Task 3.5: Dokumentation und Abnahme~~ [Completed]
 
 - `README.md`: Zweck, Voraussetzungen (Tag `gtask`, REST-API aktiv,
   Token), Konfiguration, Aufruf mit Pipe, Exit-Codes, Grenzen
