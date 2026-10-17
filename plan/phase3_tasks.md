@@ -1,6 +1,6 @@
 # Phase 3: Super Productivity und Ablauf
 
-## Task 3.1: Fake-Server für Tests
+## ~~Task 3.1: Fake-Server für Tests~~ [Completed]
 
 - pytest-Fixture mit `http.server` auf zufälligem Port in einem Thread
 - antwortet mit den Fixtures `tests/fixtures/sp_*.json`, zeichnet Requests
@@ -12,7 +12,7 @@ AI Prompt:
 > `POST /tasks` und `GET /tasks/<id>`. Antworten basieren auf den echten
 > Fixtures. Er muss Authorization-Header und Request-Bodies aufzeichnen.
 
-## Task 3.2: SP-Client
+## ~~Task 3.2: SP-Client~~ [Completed]
 
 - `SpClient(base_url, token)` mit `health()`, `tags()`, `create_task(body)`,
   `get_task(id)` über `urllib.request`
@@ -25,7 +25,7 @@ AI Prompt:
 > Fehlerfall. Implementiere dann den Client. Das Token darf in keiner
 > Fehlermeldung erscheinen.
 
-## Task 3.3: Vorprüfung
+## ~~Task 3.3: Vorprüfung~~ [Completed]
 
 - `precheck(client, tag_name) -> tag_id` gemäß `design.md`, Ablauf Schritt 1
 - Fehler: nicht erreichbar, `rendererReady` false, 401, Tag fehlt, Tag
@@ -36,7 +36,7 @@ AI Prompt:
 > Schreibe zuerst je einen Test pro Fehlerfall und einen für den Erfolg
 > (Vergleich ohne Groß-/Kleinschreibung). Implementiere dann `precheck`.
 
-## Task 3.4: Import-Schleife und `main`
+## ~~Task 3.4: Import-Schleife und `main`~~ [Completed]
 
 - Konfiguration aus `.env` und Umgebung, Vorgaben aus `design.md`
 - pro Task: überspringen wenn registriert, sonst `POST`, `GET`,

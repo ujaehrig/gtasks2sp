@@ -18,7 +18,9 @@ gog tasks list <tasklist-id> --all --json --results-only | ./tasks2sp.py
 - Eingabe: JSON-Array von Google-Tasks auf stdin
 - `--all` ist Pflicht in der Pipe, sonst liefert gog maximal 20 Tasks
 - `--dry-run`: zeigt geplante Imports, schreibt weder nach Super Productivity
-  noch ins Importregister
+  noch ins Importregister (legt auch keine Datei an)
+- `--env-file`: Pfad der `.env`, Vorgabe ist die `.env` neben dem Skript;
+  Umgebungsvariablen haben Vorrang
 
 ## Konfiguration (`.env`)
 
@@ -110,8 +112,8 @@ Bei Code 2 wurde nichts angelegt.
 
 - Fehlgeschlagene Tasks werden nicht registriert, beim nächsten Lauf erneut
   versucht
-- Fortschritt pro Task und Zusammenfassung auf stderr, z. B.
-  `12 gelesen, 9 offen, 3 importiert, 6 bereits importiert, 0 Fehler`
+- Fortschritt pro Task und Zusammenfassung auf stderr (englisch), z. B.
+  `29 read, 27 open, 3 imported, 24 already imported, 0 failed`
 
 ## Technik
 
