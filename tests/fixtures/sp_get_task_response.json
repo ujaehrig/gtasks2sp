@@ -1,0 +1,20 @@
+{
+  "ok": true,
+  "data": {
+    "id": "Lmz6EB6d1OZCr15lgaJHi",
+    "subTaskIds": [],
+    "timeSpentOnDay": {},
+    "timeSpent": 0,
+    "timeEstimate": 0,
+    "isDone": false,
+    "title": "tasks2sp probe",
+    "tagIds": [
+      "PNp-PrzJYl-Orzjry23pi"
+    ],
+    "created": 1792244098017,
+    "attachments": [],
+    "projectId": "INBOX_PROJECT",
+    "notes": "Zeile 1\n\nhttps://tasks.google.com/task/example",
+    "dueDay": "2026-10-20"
+  }
+}

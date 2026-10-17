@@ -1,0 +1,7 @@
+{
+  "ok": false,
+  "error": {
+    "code": "UNAUTHORIZED",
+    "message": "Invalid authorization token. Find the token in Settings \u2192 Misc \u2192 Access Token."
+  }
+}

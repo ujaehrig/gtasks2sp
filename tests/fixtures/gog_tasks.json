@@ -1,0 +1,93 @@
+[
+  {
+    "due": "2023-12-23T00:00:00.000Z",
+    "etag": "\"etag-1\"",
+    "id": "dGFza00000000000000001",
+    "kind": "tasks#task",
+    "position": "00000000000000000001",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000001",
+    "status": "needsAction",
+    "title": "Offen mit Datum in der Vergangenheit",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0001?sa=6"
+  },
+  {
+    "etag": "\"etag-2\"",
+    "id": "dGFza00000000000000002",
+    "kind": "tasks#task",
+    "position": "00000000000000000002",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000002",
+    "status": "needsAction",
+    "title": "Offen ohne Datum",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0002?sa=6"
+  },
+  {
+    "due": "2026-10-20T00:00:00.000Z",
+    "etag": "\"etag-3\"",
+    "id": "dGFza00000000000000003",
+    "kind": "tasks#task",
+    "notes": "Anonymisierte Notiz\nzweite Zeile",
+    "position": "00000000000000000003",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000003",
+    "status": "needsAction",
+    "title": "Offen mit Notiz",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0003?sa=6"
+  },
+  {
+    "due": "2026-10-18T00:00:00.000Z",
+    "etag": "\"etag-4\"",
+    "id": "dGFza00000000000000004",
+    "kind": "tasks#task",
+    "links": [
+      {
+        "description": "Betreff einer Mail",
+        "link": "https://mail.google.com/mail/#all/example",
+        "type": "email"
+      }
+    ],
+    "position": "00000000000000000004",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000004",
+    "status": "needsAction",
+    "title": "Offen mit Mail-Link",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0004?sa=6"
+  },
+  {
+    "due": "2026-10-19T00:00:00.000Z",
+    "etag": "\"etag-5\"",
+    "id": "dGFza00000000000000005",
+    "kind": "tasks#task",
+    "position": "00000000000000000005",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000005",
+    "status": "needsAction",
+    "title": "Unteraufgabe",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0005?sa=6",
+    "parent": "dGFza00000000000000003"
+  },
+  {
+    "completed": "2026-10-16T08:00:00.000Z",
+    "due": "2026-10-15T00:00:00.000Z",
+    "etag": "\"etag-6\"",
+    "id": "dGFza00000000000000006",
+    "kind": "tasks#task",
+    "position": "00000000000000000006",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000006",
+    "status": "completed",
+    "title": "Erledigt",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0006?sa=6"
+  },
+  {
+    "etag": "\"etag-7\"",
+    "id": "dGFza00000000000000007",
+    "kind": "tasks#task",
+    "position": "00000000000000000007",
+    "selfLink": "https://www.googleapis.com/tasks/v1/lists/TEST_LIST_ID/tasks/dGFza00000000000000007",
+    "status": "needsAction",
+    "updated": "2026-10-17T12:00:00.000Z",
+    "webViewLink": "https://tasks.google.com/task/web0007?sa=6"
+  }
+]
