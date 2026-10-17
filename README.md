@@ -20,6 +20,8 @@ Design and terminology: [plan/design.md](plan/design.md),
 
 Copy `.env.example` to `.env` next to the script and fill in `SP_TOKEN` from
 *Settings → Misc → Access Token*. Environment variables override the file.
+The script may be symlinked, e.g. into `~/bin`; it still reads the `.env`
+next to the real file. `--env-file` selects another file.
 
 | Key             | Default                                |
 | --------------- | -------------------------------------- |

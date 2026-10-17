@@ -482,6 +482,15 @@ def load_config(env: Mapping[str, str]) -> Config:
     )
 
 
+def default_env_file(script: Path = Path(__file__)) -> Path:
+    """Return the ``.env`` next to the real script file.
+
+    Symlinks are resolved so that a link in e.g. ``~/bin`` still finds the
+    ``.env`` in the project directory instead of looking next to the link.
+    """
+    return script.resolve().with_name(".env")
+
+
 def _parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
@@ -498,9 +507,9 @@ def _parse_args(argv: Sequence[str]) -> argparse.Namespace:
     parser.add_argument(
         "--env-file",
         type=Path,
-        default=Path(__file__).with_name(".env"),
-        help="settings file (default: .env next to this script); "
-        "the environment takes precedence",
+        default=default_env_file(),
+        help="settings file (default: .env next to this script, symlinks "
+        "resolved); the environment takes precedence",
     )
     return parser.parse_args(argv)
 

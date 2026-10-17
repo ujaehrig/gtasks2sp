@@ -4,7 +4,26 @@ from pathlib import Path
 
 import pytest
 
-from tasks2sp import ConfigError, load_config
+from tasks2sp import ConfigError, default_env_file, load_config
+
+
+def test_default_env_file_follows_symlink_to_script(tmp_path: Path) -> None:
+    project = tmp_path / "project"
+    project.mkdir()
+    script = project / "tasks2sp.py"
+    script.write_text("")
+    link_dir = tmp_path / "bin"
+    link_dir.mkdir()
+    link = link_dir / "tasks2sp.py"
+    link.symlink_to(script)
+
+    assert default_env_file(link) == project / ".env"
+
+
+def test_default_env_file_is_next_to_this_script() -> None:
+    expected = Path(__file__).resolve().parent.parent / ".env"
+
+    assert default_env_file() == expected
 
 
 def test_defaults(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> None:

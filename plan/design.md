@@ -19,8 +19,8 @@ gog tasks list <tasklist-id> --all --json --results-only | ./tasks2sp.py
 - `--all` ist Pflicht in der Pipe, sonst liefert gog maximal 20 Tasks
 - `--dry-run`: zeigt geplante Imports, schreibt weder nach Super Productivity
   noch ins Importregister (legt auch keine Datei an)
-- `--env-file`: Pfad der `.env`, Vorgabe ist die `.env` neben dem Skript;
-  Umgebungsvariablen haben Vorrang
+- `--env-file`: Pfad der `.env`, Vorgabe ist die `.env` neben der echten
+  Skriptdatei (Symlinks werden aufgelöst); Umgebungsvariablen haben Vorrang
 
 ## Konfiguration (`.env`)
 
